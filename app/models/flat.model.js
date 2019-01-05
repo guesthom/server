@@ -14,6 +14,7 @@ var FlatSchema = new Schema({
     owner_id: {type: Schema.Types.ObjectId, ref: 'User', autopopulate: true},
     name: {type: String, default: ''},
     length: {type: Number, default: ''},
+    avatar: {type: String, default: ''},
     rent: {type: Number, default: ''},
     deposite: {type: Number, default: ''},
     area: {type: String, default: ''},

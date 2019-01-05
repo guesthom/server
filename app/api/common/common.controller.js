@@ -27,6 +27,7 @@ exports.get = function (req, res) {
 
 // Get a single thing
 exports.getById = function (req, res) {
+    console.log("inside this")
     var Model = mongoose.model(req.params.collection);
     Model.findOne({ _id: req.params.id }, function (err, annos) {
         if (err) {
